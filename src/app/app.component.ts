@@ -5,9 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
+
 export class AppComponent implements OnInit {
+  count = 0;
+
+  constructor() { }
+
   ngOnInit(): void {
-    console.log(555);
   }
 
   decrease(): void {
@@ -17,6 +21,4 @@ export class AppComponent implements OnInit {
   increase(): void {
     this.count += 1;
   }
-  
-  count = 0;
 }
